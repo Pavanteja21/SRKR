@@ -1,0 +1,19 @@
+{% extends 'base.html'%}
+ {% block content %} 
+ <h1>
+    this is home page.<br>
+    Name:{{name_1}}
+    Names:
+    {% for i in names %}
+    {{i}}<br><hr>
+    {% endfor %}
+    Student names in the database.<br>
+    
+    {% for i in student %} 
+       return self.name<br>
+    Name:{{i.name}},<br>
+    Reg number:{{i.regnumber}}<br>
+    Age:{{i.age}}<hr>
+    {% endfor %}
+   </h1>
+   {% endblock %}
